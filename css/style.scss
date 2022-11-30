@@ -9,7 +9,7 @@
 .container {
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color: rgb(26, 27, 43);
   display: flex;
   #left-section {
     width: 20%;
@@ -20,6 +20,7 @@
     width: 80%;
     height: 100%;
     background-color: rgb(26, 27, 43);
+    margin: 0 3em;
     header {
       width: 100%;
       height: 50px;
@@ -28,7 +29,7 @@
       display: flex;
       align-items: center;
       h3 {
-          background-image: linear-gradient(90deg, hsl(285, 100%, 44%) 0%, hsl(299, 100%, 50%) 100%);
+          background-image: linear-gradient(90deg, rgb(153, 0, 255) 0%, rgb(254, 4, 216) 100%);
           -webkit-background-clip: text;
           color: transparent;
       }
@@ -55,14 +56,20 @@
         background-color: rgb(26, 27, 43);
         #box1, #box2, #box3 {
             height: 33%;
-            background-color: rgb(38, 39, 47);
-            margin: 1em;
+            background-color: rgb(34, 35, 51);
+            margin: 1.5em;
         }
       }
       #feedback {
         width: 30%;
         height: 100%;
         background-color: rgb(26, 27, 43);
+        #box {
+            width: 70%;
+            height: 100%;
+            background-color: rgb(34, 35, 51);
+            margin: 1.5em 0;
+        }
       }
     }
   }
