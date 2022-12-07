@@ -2,14 +2,14 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
 
 .container {
   width: 100%;
   height: 100vh;
-  background-color: #1a1b2b;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,35 +17,39 @@
 
 .container #left-section {
   width: 20%;
-  height: 100%;
   background-color: #222333;
+  height: 100%;
 }
 
 .container #right-section {
   width: 80%;
-  height: 100%;
   background-color: #1a1b2b;
-  margin: 0 3em;
+  height: 100%;
 }
 
 .container #right-section header {
   width: 100%;
-  height: 50px;
-  background-color: #1a1b2b;
   padding: 0 1em;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .container #right-section header h3 {
-  background-image: -webkit-gradient(linear, left top, right top, from(#9900ff), to(#fe04d8));
-  background-image: linear-gradient(90deg, #9900ff 0%, #fe04d8 100%);
+  background-color: red;
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#6a40cc), to(#df37be));
+  background-image: linear-gradient(90deg, #6a40cc, #df37be);
+  background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2em;
 }
 
 .container #right-section header span {
@@ -53,13 +57,11 @@
   height: 2em;
   border-radius: 50%;
   background-color: white;
-  margin: 0 .5em;
+  margin: 0 0.5em;
 }
 
 .container #right-section header input {
   margin-left: auto;
-  background-color: #26272f;
-  color: #7b7c8c;
 }
 
 .container #right-section #main {
@@ -67,31 +69,26 @@
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 85%;
+  height: calc(100% - 50px);
 }
 
 .container #right-section #main #graphs {
-  width: 70%;
+  width: 75%;
   height: 100%;
-  background-color: #1a1b2b;
+  background-color: blue;
 }
 
-.container #right-section #main #graphs #box1, .container #right-section #main #graphs #box2, .container #right-section #main #graphs #box3 {
-  height: 33%;
-  background-color: #222333;
-  margin: 1.5em;
+.container #right-section #main #graphs #box1,
+.container #right-section #main #graphs #box2,
+.container #right-section #main #graphs #box3 {
+  height: 30%;
+  background-color: blueviolet;
+  margin: 1em;
 }
 
 .container #right-section #main #feedback {
-  width: 30%;
+  width: 25%;
   height: 100%;
-  background-color: #1a1b2b;
-}
-
-.container #right-section #main #feedback #box {
-  width: 70%;
-  height: 100%;
-  background-color: #222333;
-  margin: 1.5em 0;
+  background-color: green;
 }
 /*# sourceMappingURL=style.css.map */
