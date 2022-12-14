@@ -119,11 +119,34 @@
   margin-top: -1rem;
 }
 
+.container #right-section #main #graphs .graph-headings3 {
+  position: relative;
+  top: 10px;
+  color: #FFFF;
+  font-size: 0.95em;
+  left: 40px;
+}
+
+.container #right-section #main #graphs .graph-headings4 {
+  position: relative;
+  top: 15px;
+  color: #7d7d7d;
+  font-size: 0.8em;
+  left: 40px;
+}
+
+.container #right-section #main #graphs .graph-headings1 {
+  position: relative;
+  top: -50px;
+  color: #FFFF;
+  font-size: 1.25em;
+  left: 80px;
+}
+
 .container #right-section #main #graphs #graphs-box1,
 .container #right-section #main #graphs #graphs-box2,
 .container #right-section #main #graphs #graphs-box3 {
   height: 30%;
-  background-color: blueviolet;
   margin: 1em;
 }
 
@@ -135,10 +158,70 @@
   -ms-grid-rows: 100%;
       grid-template-rows: 100%;
   grid-gap: 1rem;
+  border-radius: 2em;
 }
 
-.container #right-section #main #graphs #graphs-box1 section {
+.container #right-section #main #graphs #graphs-box1 section#graphs-sec1, .container #right-section #main #graphs #graphs-box1 section#graphs-sec2, .container #right-section #main #graphs #graphs-box1 section#graphs-sec3 {
   background-color: #262739;
+  width: 100%;
+  border-radius: 2em;
+}
+
+.container #right-section #main #graphs #graphs-box1 section#graphs-sec1 .myGraph1, .container #right-section #main #graphs #graphs-box1 section#graphs-sec2 .myGraph1, .container #right-section #main #graphs #graphs-box1 section#graphs-sec3 .myGraph1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -20px;
+  z-index: 0;
+  display: inline-block;
+  border-radius: 2em;
+}
+
+.container #right-section #main #graphs #graphs-box1 section#graphs-sec1 canvas, .container #right-section #main #graphs #graphs-box1 section#graphs-sec2 canvas, .container #right-section #main #graphs #graphs-box1 section#graphs-sec3 canvas {
+  border-radius: 2em;
+}
+
+.container #right-section #main #graphs #graphs-box2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  border-radius: 2em;
+}
+
+.container #right-section #main #graphs #graphs-box2 section#barGraphs-sec1, .container #right-section #main #graphs #graphs-box2 section#graphs-sec2 {
+  background-color: #262739;
+  width: 100%;
+  border-radius: 2em;
+}
+
+.container #right-section #main #graphs #graphs-box2 section#barGraphs-sec1 #myGraph4, .container #right-section #main #graphs #graphs-box2 section#graphs-sec2 #myGraph4 {
+  width: 100%;
+  height: 100%;
+  position: bottom;
+}
+
+.container #right-section #main #graphs #graphs-box2 section#barGraphs-sec1 #barGraphs-sec1, .container #right-section #main #graphs #graphs-box2 section#graphs-sec2 #barGraphs-sec1 {
+  height: 100%;
+}
+
+.container #right-section #main #graphs #graphs-box3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+  grid-gap: 1rem;
+  border-radius: 2em;
+}
+
+.container #right-section #main #graphs #graphs-box3 section#graphs-sec1, .container #right-section #main #graphs #graphs-box3 section#graphs-sec2 {
+  background-color: #262739;
+  width: 100%;
+  border-radius: 2em;
 }
 
 .container #right-section #main #feedback {

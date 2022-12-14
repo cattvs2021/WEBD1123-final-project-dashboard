@@ -119,11 +119,32 @@
         height: 100%;
         padding: 1rem;
         margin-top: -1rem;
+        .graph-headings3 {
+          position: relative;
+          top: 10px;
+          color: #FFFF;
+          font-size: 0.95em;
+          left: 40px;
+        }
+        .graph-headings4 {
+          position: relative;
+          top: 15px;
+          color: rgb(125, 125, 125);
+          font-size: 0.8em;
+          left: 40px;
+        }
+        .graph-headings1 {
+          position: relative;
+          top: -50px;
+          color: #FFFF;
+          font-size: 1.25em;
+          left: 80px;
+        }
         #graphs-box1,
         #graphs-box2,
         #graphs-box3 {
           height: 30%;
-          background-color: blueviolet;
+          // background-color: blueviolet;
           margin: 1em;
         }
         #graphs-box1 {
@@ -131,8 +152,54 @@
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-rows: 100%;
           grid-gap: 1rem;
-          section {
+          border-radius: 2em;
+          section#graphs-sec1,section#graphs-sec2,section#graphs-sec3 {
             background-color: rgb(38,39,57);
+            width: 100%;
+            border-radius: 2em;
+            .myGraph1 {
+              width: 100%;
+              height: 100%;
+              position: relative;
+              top: -20px;
+              z-index: 0;
+              display: inline-block;
+              border-radius: 2em;
+            }
+            canvas {
+              border-radius: 2em;
+            }
+          }
+        }
+        #graphs-box2 {
+          display: grid;
+          grid-template-columns: 3fr 2fr;
+          grid-template-rows: 100%;
+          border-radius: 2em;
+          section#barGraphs-sec1,section#graphs-sec2 {
+            background-color: rgb(38,39,57);
+            width: 100%;
+            border-radius: 2em;
+            #myGraph4 {
+              width: 100%;
+              height: 100%;
+              position: bottom;
+          }
+          #barGraphs-sec1 {
+              height: 100%;
+          }
+          }
+        }
+        #graphs-box3 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 100%;
+          grid-gap: 1rem;
+          border-radius: 2em;
+          section#graphs-sec1,section#graphs-sec2 {
+            background-color: rgb(38,39,57);
+            width: 100%;
+            border-radius: 2em;
           }
         }
       }

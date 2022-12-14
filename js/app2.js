@@ -1,11 +1,11 @@
 $(function(){
-    let myGraph1 = document.getElementById("myGraph1");
-    console.log(myGraph1);
-    let myChart = echarts.init(myGraph1);
+    let myGraph2 = document.getElementById("myGraph2");
+    console.log(myGraph2);
+    let myChart = echarts.init(myGraph2);
     let option;
 const gaugeData = [
     {
-      value: 6,
+      value: 17,
       title: {
         offsetCenter: ["0%", "0%"],
       },
@@ -20,7 +20,7 @@ const gaugeData = [
       type: "gauge",
       startAngle: 90,
       endAngle: -270,
-      max: 10,
+      max: 30,
       min: 0,
       backgroundColor: "#F00",
       itemStyle: {

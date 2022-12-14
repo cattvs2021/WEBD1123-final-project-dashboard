@@ -33,19 +33,32 @@
                 <div id="graphs">
                     <div id="graphs-box1">
                         <section id="graphs-sec1">
-                            <h3>Today</h3>
+                            <h3 class="graph-headings3">Today</h3>
+                            <div class="myGraph1" id="myGraph1"></div>
+                            <h1 class="graph-headings1">Chat Queue</h1>
                         </section>
                         <section id="graphs-sec2">
-                            <h3>Today</h3>
+                            <h3 class="graph-headings3">Today</h3>
+                            <div class="myGraph1" id="myGraph2"></div>
+                            <h1 class="graph-headings1">Missed Chats</h1>
                         </section>
                         <section id="graphs-sec3">
-                            <h3>Today</h3>
+                            <h3 class="graph-headings3">Today</h3>
+                            <div class="myGraph1" id="myGraph3"></div>
+                            <h1 class="graph-headings1">Av. Wait Time</h1>
                         </section>
                     </div>
                     <div id="graphs-box2">
-                        <section id="graphs-sec1"></section>
-                        <section id="graphs-sec2"></section>
-                        <section id="graphs-sec3"></section>
+                        <section id="barGraphs-sec1">
+                            <h3 class="graph-headings3">Today</h3>
+                            <h1 class="graph-headings4">Chat Volume</h1>
+                            <div class="myGraph1" id="myGraph4"></div>
+                        </section>
+                        <section id="graphs-sec2">
+                            <h3 class="graph-headings3">Today</h3>
+                            <h1 class="graph-headings4">Satisfaction</h1>
+                            <div class="myGraph1" id="myGraph4"></div>
+                        </section>
                     </div>
                     <div id="graphs-box3">
                         <section id="graphs-sec1"></section>
@@ -62,7 +75,13 @@
     <script>
         window.jQuery || document.write('<script src="js/jquery-3.6.1.min.js"><\/script>')
     </script>
+    <script src="js/echarts.min.js"></script>
+
     <script src="js/app.js"></script>
+    <script src="js/app2.js"></script>
+    <script src="js/app3.js"></script>
+    <script src="js/app4.js"></script>
+
 </body>
 
 </html>
